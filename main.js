@@ -19,8 +19,8 @@ function adicionaContato() {
   tel.push(inputTel.value);
 
   let linha = "<tr>";
-  linha += `<td>${inputName.value}<td>`;
-  linha += `<td>${inputTel.value}<td>`;
+  linha += `<td>${inputName.value}</td>`;
+  linha += `<td>${inputTel.value}</td>`;
   linha += "</tr>";
 
   linhas += linha;
@@ -34,5 +34,5 @@ function adicionaContato() {
 
 function atualizaAgenda() {
   const corpoTabela = document.querySelector("tbody");
-  corpoTabela.innerHTML = linha;
+  corpoTabela.innerHTML = linhas;
 }
